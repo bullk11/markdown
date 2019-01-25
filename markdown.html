@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="markdown.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head> 
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 list_md no-padding">
+		<nav class="navbar navbar-light footer mx-auto">
+		  MarkdownEditor
+      <button onclick="saveFile()">Save Text to File</button>
+		</nav>
+		<ul class="nav flex-column">
+		  <li class="nav-item">
+	  		<a class="nav-link" href="#">
+	  			<div class="row align-items-center">
+		  			<div class="col-sm-3">
+		  				<img class="figure-img img-fluid rounded" src="./document_file.png">
+		  			</div>
+		  			<div class="col-sm-9">
+		  				<p>Document 1</p>
+		  			</div>
+		  		</div>
+	    	 </a>
+		  </li>
+		  <li class="nav-item">
+	  		<a class="nav-link" href="#">
+	  			<div class="row align-items-center">
+		  			<div class="col-sm-3">
+		  				<img class="figure-img img-fluid rounded" src="./document_file.png">
+		  			</div>
+		  			<div class="col-sm-9">
+		  				<p>Document 2</p>
+		  			</div>
+		  		</div>
+	    	 </a>
+		  </li>
+		</ul>
+    </div>
+
+
+    <div class="col-sm-5 bord">
+      <textarea id="textarea" ></textarea> 
+    </div>
+
+    <div class="col-sm-5 realtime" id="realtime"></div>
+  </div>
+</div>
+
+<script src="markdown.js"></script> 
+</body>
+</html>
